@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package gr.edu.ihu.shashmap;
 
 import java.io.FileReader;
@@ -28,8 +23,8 @@ public class SHashMap {
     
     private HashMap<String, Integer> dataMap = new HashMap<String, Integer>(); 
     private  ArrayList<String> arr = new ArrayList<String>();
-    public static String filename = "C:\\Users\\Hyae\\Documents\\Zipf125M.txt";
-    //public static String outputname = ("C:\\Users\\Hyae\\Documents\\SHresults.txt");
+    public static String filename = "C:\\Users\\Zipf1.51.txt";
+    //public static String outputname = ("C:\\Users\\SHresults.txt");
     private static double phi = 0.001; 
     private static LongAdder nf = new LongAdder(); //number of frequent items
 
@@ -124,7 +119,7 @@ public class SHashMap {
         for (Map.Entry<String, Integer> en : sortedMap.entrySet()) {
             if (en.getValue() >(phi*arr.size())){
                 nf.increment();                
-                System.out.println("Item = " + en.getKey() + ", Value = " + en.getValue());
+                System.out.println(/*"Item = " + en.getKey() + ", Value = " + */en.getValue());
             }            
         }    
                 

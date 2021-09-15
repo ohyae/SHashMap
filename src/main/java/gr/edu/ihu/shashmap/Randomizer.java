@@ -20,7 +20,7 @@ public class Randomizer {
         //create text file of random strings/integers      
         String[] input = new String[10000000];                
         try {
-        FileWriter f1 = new FileWriter("C:\\Users\\Hyae\\Documents\\Zipfrandom.txt", true);
+        FileWriter f1 = new FileWriter("C:\\Users\\random.txt", true);
         Random r = new Random();
         for (int j=0; j<input.length; j++) {
             input[j] = "a" + (r.nextInt(450000));
